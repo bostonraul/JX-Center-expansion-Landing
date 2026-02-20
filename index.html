@@ -6,7 +6,7 @@
     <title>JollyExplorers - Join Our Community</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -82,6 +82,16 @@
             color: #e3f2fd;
             margin-bottom: 50px;
             opacity: 0.9;
+            line-height: 1.5;
+            max-width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .subtitle .line2 {
+            display: block;
+            margin-top: 1em;
+            font-weight: 600;
         }
 
         .buttons-container {
@@ -93,18 +103,18 @@
         }
 
         .btn {
+            font-family: 'Fredoka', 'Nunito', sans-serif;
             display: inline-flex;
             align-items: center;
-            gap: 12px;
+            justify-content: center;
             padding: 18px 36px;
             font-size: 1.1rem;
             font-weight: 600;
             text-decoration: none;
-            border-radius: 12px;
+            border-radius: 16px;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             min-width: 250px;
-            justify-content: center;
         }
 
         .btn:hover {
@@ -143,10 +153,6 @@
             background: #CC0000;
         }
 
-        .btn-icon {
-            font-size: 1.3rem;
-        }
-
         .footer {
             position: absolute;
             bottom: 20px;
@@ -158,6 +164,12 @@
             opacity: 0.9;
             width: 100%;
             padding: 0 20px;
+        }
+
+        .footer-tagline {
+            font-size: 0.85rem;
+            margin-top: 6px;
+            opacity: 0.85;
         }
 
         @media (max-width: 768px) {
@@ -223,28 +235,28 @@
             <div class="robotics-header">Robotics++</div>
             <div class="activities-list">Robotics | Coding | GenAI | VR Learning | Astronomy | Photography | Public Speaking | & more</div>
             <h1>What children do beyond school defines their future</h1>
-            <p class="subtitle">Join us for exciting learning experiences</p>
+            <p class="subtitle">
+                We're opening a new Robotics++ Center in your neighborhood — designed to spark creativity, confidence, and future‑ready skills.
+                <span class="line2">Join the Early‑Interest Parent Circle — Limited Seats for Our First Batch</span>
+            </p>
             
             <div class="buttons-container">
                 <a href="https://chat.whatsapp.com/IgO58teLJRxI8EyiEyi9qb" 
                    target="_blank" 
                    class="btn btn-whatsapp">
-                    <span class="btn-icon">💬</span>
-                    <span>Reserve your child's seat</span>
+                    Get Early Access on WhatsApp
                 </a>
                 
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4hNGjJNRj3Yz0FCVVInFVHRIdlnZQGtwwfnxOVywEeFl4Lg/viewform?usp=header" 
                    target="_blank" 
                    class="btn btn-interests">
-                    <span class="btn-icon">📝</span>
-                    <span>Tell us your interests</span>
+                    Share Your Child's Interests
                 </a>
                 
                 <a href="https://www.youtube.com/shorts/fazbe1MfhO0" 
                    target="_blank" 
                    class="btn btn-preview">
-                    <span class="btn-icon">▶️</span>
-                    <span>Preview the fun at center</span>
+                    See the Fun in Action
                 </a>
             </div>
         </div>
@@ -252,6 +264,7 @@
 
     <div class="footer">
         Maker's Club by JollyExplorers
+        <div class="footer-tagline">Designed by Industry Experts</div>
     </div>
 </body>
 </html>
